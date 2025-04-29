@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Web</title>
+    <link rel="stylesheet" href="background.css" />
+  </head>
+  <body>
+    <button type="button" class="colorChange" id="myButton">Click</button>
+
+    <script>
+      const changeBtn = document.querySelector(".colorChange");
+
+      function getRandomColor() {
+        const letters = "0123456789ABCDEF";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      changeBtn.addEventListener("click", function () {
+        const newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+        width = window.getComputedStyle(myButton).width;
+        text = window.getComputedStyle(myButton).fontSize;
+        width = width.replace("px", "");
+        text = text.replace("px", "");
+        document.getElementById("myButton").style.width =
+          parseInt(width) + 12 + "px";
+        document.getElementById("myButoon").style.fontSize =
+          parseInt(text) + 3 + "px";
+      });
+    </script>
+  </body>
+</html>
