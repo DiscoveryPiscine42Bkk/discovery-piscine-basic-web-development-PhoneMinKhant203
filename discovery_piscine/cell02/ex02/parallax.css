@@ -1,0 +1,26 @@
+body, html {
+    height: 100%;
+  }
+
+
+.parallax {
+    background-image: url('https://media.istockphoto.com/photos/beagle-dog-running-on-a-meadow-picture-id948034778?k=20&m=948034778&s=612x612&w=0&h=FHNuKhtXQWiPF5Zi391sU5UuagXHjmC-_LPCtmEdOFw=');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.parallax2{
+    background-image: url('https://worldanimalfoundation.org/wp-content/uploads/2024/01/dog-with-long-ears-1024x683.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}

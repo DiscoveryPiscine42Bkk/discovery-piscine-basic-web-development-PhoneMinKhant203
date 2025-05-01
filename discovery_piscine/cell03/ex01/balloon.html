@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balloon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="balloon" id="balloon"></div>
+
+    <script>
+      const balloon = document.getElementById("balloon");
+
+      let size = 200;
+      let colors = ["red", "green", "blue"];
+      let colorIndex = 0;
+      let mouseInside = false;
+
+      function setBalloonStyle() {
+        balloon.style.width = size + "px";
+        balloon.style.height = size + "px";
+        balloon.style.backgroundColor = colors[colorIndex];
+      }
+
+      function cycleColor(forward = true) {
+        if (forward) {
+          colorIndex = (colorIndex + 1) % colors.length;
+        } else {
+          colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+        }
+      }
+
+      balloon.addEventListener("mouseenter", () => {
+        mouseInside = true;
+      });
+
+      balloon.addEventListener("mouseleave", () => {
+        mouseInside = false;
+      });
+
+      balloon.addEventListener("click", () => {
+        size += 10;
+        if (size > 420) size = 200;
+        cycleColor(true);
+        setBalloonStyle();
+      });
+
+      setInterval(() => {
+        if (!mouseInside && size > 200) {
+          size -= 5;
+          if (size < 200) size = 200;
+          cycleColor(false);
+          setBalloonStyle();
+        }
+      }, 100);
+    </script>
+  </body>
+</html>
