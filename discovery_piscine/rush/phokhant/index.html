@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-sans leading-relaxed text-gray-800">
+    <header
+      class="bg-gradient-to-r from-blue-100 to-indigo-200 shadow-md fixed top-0 w-full z-50 dark:bg-gray-900"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a
+              href="#"
+              class="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-500 font-bold text-gray-800"
+              >Phokhant</a
+            >
+          </div>
+          <div class="hidden md:flex space-x-12">
+            <a href="#home" class="text-gray-700 hover:text-indigo-500">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-indigo-500"
+              >About</a
+            >
+            <a href="#portfolio" class="text-gray-700 hover:text-indigo-500"
+              >Portfolio</a
+            >
+            <a href="#portfolio" class="text-gray-700 hover:text-indigo-500"
+              >Contact</a
+            >
+          </div>
+
+          <div class="md:hidden">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 6h16 M4 12h16 M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="#home" class="block py-2 text-gray-700 hover:text-indingo-500"
+          >Home</a
+        >
+        <a href="#about" class="block py-2 text-gray-700 hover:text-indingo-500"
+          >About</a
+        >
+        <a
+          href="#portfolio"
+          class="block py-2 text-gray-700 hover:text-indingo-500"
+          >Portfolio</a
+        >
+        <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-500"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen flex items-center justify-center bg-fixed bg-center bg-cover parallax-hero"
+    >
+      <div
+        class="bg-black bg-opacity-50 p-10 rounded-xl text-center text-white"
+      >
+        <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I'm</h1>
+        <h1
+          class="text-6xl font-black md:text-8xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-indigo-500"
+        >
+          PHOKHANT
+        </h1>
+        <p class="text-xl md:text-2xl">Creative Web Developer and Designer</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      class="py-20 px-6 md:px-20 bg-gradient-to-r from-blue-100 to-indigo-200"
+    >
+      <h2 class="text-3xl font-bold text-center mb-10">About Me</h2>
+      <div
+        class="max-w-4xl bg-white bg-opacity-90 py-3 px-3 rounded-xl mx-auto text-center text-gray-700"
+      >
+        <p>
+          I'm a passionate developer who loves blending art and code to create
+          impactful digital experiences. I specialize in front-end development,
+          responsive and interactive UI/UX.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="py-20 px-6 md:px-20 bg-gray-100">
+      <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto"
+      >
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/11674/11674591.png?semt=ais_hybrid"
+            alt="Project 1"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project One</h3>
+            <p class="text-sm text-gray-600">A web app built with React.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-css-3d-icon-download-in-png-blend-fbx-gltf-file-formats--open-source-framework-code-logos-and-brands-pack-icons-9325303.png"
+            alt="Project 2"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project Two</h3>
+            <p class="text-sm text-gray-600">
+              A creative landing page using Tailwind.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://static-00.iconduck.com/assets.00/vue-icon-2048x2048-ttu9fp8c.png"
+            alt="Project 3"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project Three</h3>
+            <p class="text-sm text-gray-600">
+              An eCommerce dashboard with Vue.js.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://cdn-icons-png.freepik.com/256/11674/11674591.png?semt=ais_hybrid"
+            alt="Project 1"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project One</h3>
+            <p class="text-sm text-gray-600">A web app built with React.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-css-3d-icon-download-in-png-blend-fbx-gltf-file-formats--open-source-framework-code-logos-and-brands-pack-icons-9325303.png"
+            alt="Project 2"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project Two</h3>
+            <p class="text-sm text-gray-600">
+              A creative landing page using Tailwind.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            src="https://static-00.iconduck.com/assets.00/vue-icon-2048x2048-ttu9fp8c.png"
+            alt="Project 3"
+            class="w-full"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Project Three</h3>
+            <p class="text-sm text-gray-600">
+              An eCommerce dashboard with Vue.js.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="py-20 px-6 md:px-20 bg-fixed bg-center bg-cover parallax-contact text-white"
+    >
+      <div
+        class="bg-black bg-opacity-60 p-10 rounded-xl text-center max-w-xl mx-auto"
+      >
+        <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
+        <p class="mb-6">
+          Got a project or idea? Reach out and let's make something awesome.
+        </p>
+        <a
+          href="mailto:alex@example.com"
+          class="inline-block bg-white text-black font-semibold py-2 px-6 rounded hover:bg-gray-300 transition"
+          >Say Hello</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center bg-gray-800 text-white">
+      &copy; 2025 Phokhant. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
