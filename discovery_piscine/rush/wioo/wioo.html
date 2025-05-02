@@ -1,0 +1,224 @@
+<html class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Wioo - Cv</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" />
+</head>
+
+<body class="bg-gradient-to-r from-rose-500 to-red-400 overflow-x-hidden">
+    <!--Navigation-->
+    <span class="fixed text-white text-4xl top-5 left-4 cursor-pointer block lg:hidden" onclick="openSidebar()">
+        <i class="bi bi-filter-left px-2 bg-slate-600 rounded-md toggleIcon"></i>
+    </span>
+    <div class="sidebar fixed top-25 bottom-0 lg:left-0 ml-4 p-2 w-[160px] hidden lg:block">
+        <h1 class="text-white text-center font-bold text-4xl mb-6 hidden" id="wioo">Wioo</h1>
+        <a href="../main/main.html">
+            <div
+                class="p-2.5 mt-4 flex items-center text-center rounded-full px-4 duration-300 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white">
+                <i class="bi bi-house-fill"></i>
+                <span class="text-[15px] ml-4 text-white font-bold">Home</span>
+            </div>
+        </a>
+        <a href="#about">
+            <div
+                class="p-2.5 mt-4 flex items-center text-center rounded-full px-4 duration-300 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white">
+                <i class="bi bi-person-lines-fill"></i>
+                <span class="text-[15px] ml-4 text-white font-bold">About</span>
+            </div>
+        </a>
+        <a href="#profession">
+            <div
+                class="p-2.5 mt-4 flex items-center rounded-full px-4 duration-300 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span class="text-[15px] ml-4 text-white font-bold">Profession</span>
+            </div>
+        </a>
+        <a href="#contact">
+            <div
+                class="p-2.5 mt-4 flex items-center rounded-full px-4 duration-300 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white">
+                <i class="bi bi-envelope-paper-fill"></i>
+                <span class="text-[15px] ml-4 text-white font-bold">Contact</span>
+            </div>
+        </a>
+    </div>
+    <!--End of Navigation-->
+
+    <!--About-->
+    <div class="lg:mb-20 md:mb-10 mb-12 flex w-full mt-14 pr-0 md:pr-5 lg:pr-20 justify-center" id="about">
+        <di class="flex-1 hidden md:block"></di>
+
+        <div class="flex-none items-center text-center mt:2 md:mt-46 rounded-md lg:mr-16">
+            <img class="md:w-80 md:h-80 w-60 h-60 object-cover object-center mx-auto rounded-lg shadow-xl shadow-blue-gray-900/50"
+                src="assets/cat_using_computer.jpg" alt="myProfile" />
+            <h1 class="font-bold text-white text-[30px] md:text-[50px] lg:text-[70px]">Wint Shwe Yi Oo</h1>
+            <h3 class="text-slate-200 text-xl md:text-2xl lg:text-4xl overline font-mono uppercase">Software Engineer
+            </h3>
+        </div>
+
+        <img class="flex-auto w-10 md:w-60 object-cover object-center mx-auto rounded-lg shadow-xl h-1/2 shadow-blue-gray-900/50 hidden md:block"
+            src="assets/profile.jpg" alt="myProfile" />
+    </div>
+    <!--About-->
+
+    <!--Profession-->
+    <div class="grid grid-flow-col grid-rows-2 gap-4 px-10 pt-10 bg-slate-800/50 rounded-md mx-4 shadow-xl/20"
+        id="profession">
+        <div class="row-span-2 col-span-2 hidden md:block"></div>
+        <!--Language-->
+        <div class="w-full col-span-6 mb-8 mt-4">
+            <h1 class="text-white font-bold text-4xl text-center mb-10">Experiences & Skills</h1>
+            <div class="mb-1 text-base font-medium text-purple-400 font-bold">
+                <div class="flex justify-between">
+                    <span class="text-left">C#</span>
+                    <span class="text-right">90%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-purple-500 h-2.5 rounded-full" style="width: 90%"></div>
+            </div>
+            <div class="mb-1 text-base font-medium text-amber-200">
+                <div class="flex justify-between">
+                    <span class="text-left">Python</span>
+                    <span class="text-right">45%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-amber-200 h-2.5 rounded-full" style="width: 45%"></div>
+            </div>
+            <div class="mb-1 text-base font-medium text-orange-300">
+                <div class="flex justify-between"> <!--The first text on Left, the second on right-->
+                    <span class="text-left">HTML</span>
+                    <span class="text-right">80%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-orange-400 h-2.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="mb-1 text-base font-medium text-blue-400">
+                <div class="flex justify-between">
+                    <span class="text-left">CSS</span>
+                    <span class="text-right">80%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 80%"></div>
+            </div>
+            <div class="mb-1 text-base font-medium text-yellow-300">
+                <div class="flex justify-between">
+                    <span class="text-left">Javascript</span>
+                    <span class="text-right">60%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-yellow-300 h-2.5 rounded-full" style="width: 60%"></div>
+            </div>
+            <div class="mb-1 text-base font-medium text-indigo-300">
+                <div class="flex justify-between">
+                    <span class="text-left">PHP</span>
+                    <span class="text-right">30%</span>
+                </div>
+            </div>
+            <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+                <div class="bg-indigo-300 h-2.5 rounded-full" style="width: 30%"></div>
+            </div>
+
+            <h4 class="text-white text-md md:text-xl text-center mt-16">I have experiences with using the following
+                softwares and
+                tools.</h4>
+        </div>
+
+        <!--Tools-->
+        <div class="col-span-6">
+            <div
+                class="grid grid-cols-4 gap-x-3 md:gap-x-6 gap-y-16 text-center text-white md:font-bold text-xs md:text-lg">
+                <div><img src="assets/unity.png" alt="Unity Engine"
+                        class="md:w-34 md:h-38 h-18 ml-auto mr-auto mb-4 hover:scale-110">Unity Engine</div>
+                <div><img src="assets/wordpress.png" alt="WordPress"
+                        class="md:w-38 md:h-38 h-18 ml-auto mr-auto mb-4 hover:scale-110">WordPress</div>
+                <div><img src="assets/blender-logo.png" alt="Blender"
+                        class="md:w-40 md:h-38 h-18 ml-auto mr-auto mb-4 hover:scale-110">Blender</div>
+                <div><img src="assets/inkscape-logo-1-354118891.png" alt="Inkscape"
+                        class="md:w-40 md:h-38 h-18 ml-auto mr-auto mb-4 hover:scale-110">Inkscape</div>
+                <div><img src="assets/adobe-Illustrator.png" alt="Adobe Illustrator"
+                        class="md:w-36 md:h-36 h-18 ml-auto mr-auto mb-4 hover:scale-110">Adobe Illustrator</div>
+                <div><img src="assets/Adobe_Premiere_Pro_CC.png" alt="Premiere Pro"
+                        class="md:w-36 md:h-36 h-18 ml-auto mr-auto mb-4 hover:scale-110">Premiere Pro</div>
+                <div><img src="assets/Adobe-XD-Icon.png" alt="AdobeXD"
+                        class="md:w-36 md:h-36 h-18 ml-auto mr-auto mb-4 hover:scale-110">AdobeXD</div>
+                <div><img src="assets/canva-png.png" alt="Canva"
+                        class="md:w-36 md:h-36 h-18 ml-auto mr-auto mb-4 hover:scale-110">Canva</div>
+            </div>
+        </div>
+    </div>
+    <!--End of Profession-->
+
+    <!--Contact-->
+    <div class="w-full p-6" id="contact">
+        <h1 class="text-white font-bold text-4xl text-center mt-14">Contact Me!</h1>
+        <h3
+            class="text-white text-2xl text-center mt-8 border-2 border-dashed rounded-lg w-auto md:w-100 mx-auto py-6 font-mono">
+            Phone: +66-698-201-932</h3>
+        <h3 class="text-white text-md md:text-2xl text-center mt-8">~Social Media Accounts~</h3>
+        <div class="text-4xl text-center my-4 text-stone-100">
+            <a href="https://www.line.me/en/"><i class="bi bi-line hover:text-green-400"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook hover:text-blue-400 md:ml-6"></i></a>
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp hover:text-green-400 md:ml-6"></i></a>
+            <a href="https://workspace.google.com/intl/en-US/gmail/"><i class="bi bi-envelope-fill hover:text-red-700 md:ml-6"></i></a>
+            <a href="https://web.telegram.org"><i class="bi bi-telegram hover:text-sky-400 md:ml-6"></i></a>
+        </div>
+    </div>
+
+    <hr class="text-rose-600 w-9/10 mx-auto">
+    <p class="text-slate-200 text-sm text-center p-2">Copyright © 2025 wioo. All Right Reserved.</p>
+    <!--End of Contact-->
+
+
+    <script type="text/javascript">
+
+        /*Navigation*/
+        var isIconChange = true;
+
+        function openSidebar() {
+            document.querySelector(".sidebar").classList.toggle("hidden");
+
+            if (isIconChange) {
+                toggleIcons("bi-filter-left", "bi-x-lg");
+                isIconChange = false;
+            }
+            else {
+                toggleIcons("bi-x-lg", "bi-filter-left");
+                isIconChange = true;
+            }
+        }
+
+        function toggleIcons(removeIcon, addIcon) {
+            const toggleIcon = document.querySelector(".toggleIcon");
+            toggleIcon.classList.remove(removeIcon);
+            toggleIcon.classList.add(addIcon);
+        }
+        /*End of Navigation*/
+
+        /*For make the 'wioo' text appear when scroll*/
+        const target = document.getElementById("profession");
+        const revealText = document.getElementById("wioo");
+
+        window.addEventListener("scroll", () => {
+            const targetTxt = target.getBoundingClientRect(); //Check the about screen is visible
+
+            console.log(targetTxt.top);
+
+            if (targetTxt.top < window.innerHeight / 4) {
+                revealText.classList.remove("hidden");
+                console.log("unHide");
+            } else {
+                revealText.classList.add("hidden");
+                console.log("Hide");
+            }
+        });
+    </script>
+</body>
+
+</html>

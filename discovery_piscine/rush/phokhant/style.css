@@ -1,0 +1,20 @@
+/* Parallax background sections */
+.parallax-hero {
+  background-image: url(access/img/herobg.jpg), url(access/img/bg-bottom-hero.png);
+
+}
+
+.parallax-contact {
+  background-image: url(access/img/herobg.jpg);
+}
+
+.parallax-hero,
+.parallax-contact {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
